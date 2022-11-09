@@ -18,6 +18,7 @@ class Observation:
     def __str__(self):
         return str(self.value)
 
+    
 class Person:
     def __init__(self, name: str):
         self.name = name
@@ -25,6 +26,7 @@ class Person:
     def __str__(self):
         return self.name
 
+    
 # class Doctor(Person):
 #     def __init__(self, name):
 #         super().__init__(name)
@@ -33,6 +35,7 @@ class Person:
 #     @property
 #     def patient_names(self):
 #         return [p.name]
+
 
 class Patient(Person):
     """A patient in an inflammation study"""
@@ -56,6 +59,7 @@ class Patient(Person):
         self.observations.append(new_observation)
         return new_observation
 
+    
 def load_csv(filename):
     """Load a Numpy array from a CSV
 
